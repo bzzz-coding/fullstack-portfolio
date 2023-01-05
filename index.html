@@ -413,7 +413,7 @@
 	<footer id="footer" class="wrapper style1-alt">
 		<div class="inner">
 			<ul class="menu">
-				<li>&copy; <script>document.write(new Date().getFullYear())</script> Bitian Zhang. All rights reserved.</li>
+				<li>&copy; <span id="copyrightYear"></span> Bitian Zhang. All rights reserved.</li>
 				<li>Design: <a href="http://html5up.net">HTML5 UP</a> and Bitian Zhang</li>
 			</ul>
 		</div>
@@ -427,7 +427,16 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	<script>
+		// Get the current year
+		var currentYear = new Date().getFullYear();
+	
+		// Get the element with the ID "year"
+		var yearElement = document.getElementById("copyrightYear");
+	
+		// Insert the current year into the element
+		yearElement.innerHTML = currentYear;
+	</script>
 </body>
 
 </html>
