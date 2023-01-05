@@ -429,12 +429,12 @@
 	<script src="assets/js/main.js"></script>
 	<script>
 		// Get the current year
-		var currentYear = new Date().getFullYear();
+		const currentYear = new Date().getFullYear();
 	
-		// Get the element with the ID "year"
-		var yearElement = document.getElementById("copyrightYear");
+		// Get the element with the id "copyrightYear"
+		const yearElement = document.querySelector("#copyrightYear");
 	
-		// Insert the current year into the element
+		// Insert the current year into the yearElement
 		yearElement.innerHTML = currentYear;
 	</script>
 </body>
